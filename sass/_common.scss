@@ -21,6 +21,10 @@ body {
   color: v.$primary-color;
 }
 
+.mb {
+  margin-bottom: 1rem;
+}
+
 .header-pill {
   display: inline-block;
   padding: 5px 20px;
@@ -32,3 +36,15 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Open Sans",sans-serif;}
+
+  .section-title{
+    color: v.$primary-color;
+    font-size: 2rem;
+    @extend .mb;
+  }
+
+  .title-p{
+    color: v.$p-color;
+    margin-bottom: 3rem;
+    font-size: 14px;
+  }
