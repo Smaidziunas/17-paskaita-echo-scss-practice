@@ -65,7 +65,7 @@ p {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn, .btn__outline {
@@ -103,9 +103,10 @@ body {
 .section-title {
   color: #081158;
   font-size: 2rem;
+  font-family: "Monserat", sans-serif;
 }
 
-.title-p {
+.hero__text {
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 3rem;
   font-size: 14px;

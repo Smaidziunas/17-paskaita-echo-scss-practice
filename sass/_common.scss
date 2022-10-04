@@ -2,7 +2,7 @@
 
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -41,9 +41,10 @@ body {
     color: v.$primary-color;
     font-size: 2rem;
     @extend .mb;
+    font-family: 'Monserat', sans-serif;
   }
 
-  .title-p{
+  .hero__text{
     color: v.$p-color;
     margin-bottom: 3rem;
     font-size: 14px;
