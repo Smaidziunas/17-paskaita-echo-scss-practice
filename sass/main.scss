@@ -1,4 +1,39 @@
 @use 'reset';
 @use 'common';
+@use 'vars' as v;
 
 
+// Hero ------
+
+
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .hero__text{
+  color: v.$p-color;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+}
+
+
+// Features
+
+.features {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .features__text{
+    color: v.$p-color;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+  .features-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

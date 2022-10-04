@@ -5,6 +5,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 .btn {
   border: none;
@@ -40,12 +45,6 @@ body {
   .section-title{
     color: v.$primary-color;
     font-size: 2rem;
-    @extend .mb;
     font-family: 'Monserat', sans-serif;
   }
 
-  .hero__text{
-    color: v.$p-color;
-    margin-bottom: 3rem;
-    font-size: 14px;
-  }
