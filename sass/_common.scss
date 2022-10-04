@@ -1,0 +1,22 @@
+@use 'vars' as v;
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn {
+  border: none;
+  padding: 0.5em 1em;
+  background-color: v.$primary-color;
+  color: v.$primary-light-color;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid v.$primary-color;
+}
+.bnt__outline {
+  @extend .btn;
+  background: transparent;
+  
+}

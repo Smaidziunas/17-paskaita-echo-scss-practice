@@ -1,3 +1,17 @@
 body {
-  height: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn, .bnt__outline {
+  border: none;
+  padding: 0.5em 1em;
+  background-color: #081158;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid #081158;
+}
+
+.bnt__outline {
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */
