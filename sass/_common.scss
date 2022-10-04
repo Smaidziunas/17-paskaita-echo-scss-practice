@@ -15,8 +15,20 @@ body {
   border-radius: 25px;
   border: 1px solid v.$primary-color;
 }
-.bnt__outline {
+.btn__outline {
   @extend .btn;
   background: transparent;
-  
+  color: v.$primary-color;
 }
+
+.header-pill {
+  display: inline-block;
+  padding: 5px 20px;
+  color: v.$primary-light-color;
+  text-transform: uppercase;
+  background-color: v.$secondarybg-color;
+  border-radius: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans",sans-serif;}

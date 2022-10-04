@@ -2,7 +2,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.btn, .bnt__outline {
+.btn, .btn__outline {
   border: none;
   padding: 0.5em 1em;
   background-color: #081158;
@@ -12,6 +12,20 @@ body {
   border: 1px solid #081158;
 }
 
-.bnt__outline {
+.btn__outline {
   background: transparent;
+  color: #081158;
+}
+
+.header-pill {
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(251, 178, 68, 0.8);
+  border-radius: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=main.css.map */
