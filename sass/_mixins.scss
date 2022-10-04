@@ -18,3 +18,16 @@
       top: -6px;
     }}
 }
+
+@mixin ulReset{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@mixin contactIcons{
+  left: 0;
+  // position: absolute;
+  color:#999;
+  font-family: FontAwesome;
+  padding-right: 30px;
+}
