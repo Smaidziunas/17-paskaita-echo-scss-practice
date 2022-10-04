@@ -1,6 +1,7 @@
 @use 'reset';
 @use 'common';
 @use 'vars' as v;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 
 // Hero ------
@@ -35,5 +36,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
+    margin-bottom: 3rem;
+
+    &__icon{
+      font-size: 2.5em;
+      margin-top: 0.4em;
+      margin-bottom: 0,7em;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparentize(v.$secondary-color, 0.5);
+        left: 50%;
+        top: -6px;
+      }}
+
+      &__title {
+        font-size: 18px;
+      }
+      &__p {
+        color: v.$p-color;
+        margin-bottom: 2rem;
+        font-size: 14px;
+        text-align: center;
+      }
+    }}
+
+    // Why us
+
+
+    .why-us__p {
+      color: v.$p-color;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+
+    .why-us-list{
+      list-style-type: none;
+      color: v.$p-color;
+      margin-bottom: 3rem;
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 0;
+
+      &__marker::before{
+      content: '\f00c';
+      font-family: FontAwesome;
+      padding-right: 0.3rem;
+      }
+    }
