@@ -1,8 +1,13 @@
 @use 'reset';
 @use 'common';
 @use 'vars' as v;
+@use 'mixins' as m;
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
+
+body{
+  margin-bottom: 500px;
+}
 
 // Hero ------
 
@@ -17,6 +22,7 @@
   font-size: 14px;
 }
 }
+
 
 
 // Features
@@ -38,22 +44,7 @@
     align-items: center;
     margin-bottom: 3rem;
 
-    &__icon{
-      font-size: 2.5em;
-      margin-top: 0.4em;
-      margin-bottom: 0,7em;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: transparentize(v.$secondary-color, 0.5);
-        left: 50%;
-        top: -6px;
-      }}
+    @include m.myIcon;
 
       &__title {
         font-size: 18px;
@@ -67,6 +58,11 @@
     }}
 
     // Why us
+
+    .why-us{
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
 
 
     .why-us__p {
@@ -89,3 +85,34 @@
       padding-right: 0.3rem;
       }
     }
+
+    // Services
+
+    .services-title{
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .services-grid{
+      display: grid;
+      grid-template-columns: 50px auto;
+      text-align:left;
+      place-self: center;
+      padding: 30px 15px;
+      border: 1px solid rgb(255, 255, 255);
+      margin-bottom: 30px;
+
+      @include m.myIcon($leftPosition:0);
+
+      &__icon{
+        grid-row: span 2;
+      }
+
+    }
+
+
+
+
+    // media queries
+
+    @import 'media';

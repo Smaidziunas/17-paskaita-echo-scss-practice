@@ -1,0 +1,20 @@
+@use 'vars' as v;
+
+@mixin myIcon($leftPosition:50%){
+  &__icon{
+    font-size: 2.5em;
+    margin-top: 0.4em;
+    margin-bottom: 0,7em;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: transparentize(v.$secondary-color, 0.5);
+      left: $leftPosition;
+      top: -6px;
+    }}
+}
